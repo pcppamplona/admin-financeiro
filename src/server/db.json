@@ -1,0 +1,702 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "João Silva",
+      "email": "joao.silva@exemplo.com",
+      "avatar": "https://i.pravatar.cc/150?img=1",
+      "createdAt": "2024-05-10T10:30:00Z",
+      "settings": {
+        "theme": "light",
+        "currency": "BRL",
+        "notifications": {
+          "email": true,
+          "push": true,
+          "budgetAlerts": true
+        }
+      }
+    },
+    {
+      "id": "2",
+      "name": "Maria Oliveira",
+      "email": "maria.oliveira@exemplo.com",
+      "avatar": "https://i.pravatar.cc/150?img=5",
+      "createdAt": "2024-06-15T14:20:00Z",
+      "settings": {
+        "theme": "dark",
+        "currency": "BRL",
+        "notifications": {
+          "email": false,
+          "push": true,
+          "budgetAlerts": true
+        }
+      }
+    }
+  ],
+  "accounts": [
+    {
+      "id": "1",
+      "userId": 1,
+      "name": "Conta Corrente",
+      "type": "checking",
+      "balance": 5240.75,
+      "institution": "Banco Central",
+      "color": "#1E88E5",
+      "isActive": true,
+      "createdAt": "2024-05-12T08:30:00Z"
+    },
+    {
+      "id": "2",
+      "userId": 1,
+      "name": "Poupança",
+      "type": "savings",
+      "balance": 12500.35,
+      "institution": "Banco Central",
+      "color": "#43A047",
+      "isActive": true,
+      "createdAt": "2024-05-12T08:35:00Z"
+    },
+    {
+      "id": "3",
+      "userId": 1,
+      "name": "Investimentos",
+      "type": "investment",
+      "balance": 35750,
+      "institution": "Corretora Alpha",
+      "color": "#FFC107",
+      "isActive": true,
+      "createdAt": "2024-06-05T14:20:00Z"
+    },
+    {
+      "id": "4",
+      "userId": 2,
+      "name": "Conta Principal",
+      "type": "checking",
+      "balance": 3240.5,
+      "institution": "Banco Premium",
+      "color": "#9C27B0",
+      "isActive": true,
+      "createdAt": "2024-06-15T15:10:00Z"
+    }
+  ],
+  "categories": [
+    {
+      "id": "2",
+      "userId": 1,
+      "name": "Aluguel",
+      "type": "expense",
+      "color": "#EC407A",
+      "icon": "apartment",
+      "budgetLimit": "1505",
+      "parentId": 1,
+      "createdAt": "2024-05-12T09:05:00Z"
+    },
+    {
+      "id": "3",
+      "userId": 1,
+      "name": "Contas",
+      "type": "expense",
+      "color": "#F48FB1",
+      "icon": "apartment",
+      "budgetLimit": "300",
+      "parentId": 1,
+      "createdAt": "2024-05-12T09:10:00Z"
+    },
+    {
+      "id": "4",
+      "userId": 1,
+      "name": "Alimentação",
+      "type": "expense",
+      "color": "#FF5722",
+      "icon": "restaurant",
+      "budgetLimit": 1200,
+      "parentId": null,
+      "createdAt": "2024-05-12T09:15:00Z"
+    },
+    {
+      "id": "5",
+      "userId": 1,
+      "name": "Mercado",
+      "type": "expense",
+      "color": "#FF7043",
+      "icon": "shopping_cart",
+      "budgetLimit": 800,
+      "parentId": 4,
+      "createdAt": "2024-05-12T09:20:00Z"
+    },
+    {
+      "id": "6",
+      "userId": 1,
+      "name": "Restaurantes",
+      "type": "expense",
+      "color": "#FFAB91",
+      "icon": "local_dining",
+      "budgetLimit": 400,
+      "parentId": 4,
+      "createdAt": "2024-05-12T09:25:00Z"
+    },
+    {
+      "id": "7",
+      "userId": 1,
+      "name": "Transporte",
+      "type": "expense",
+      "color": "#3F51B5",
+      "icon": "directions_car",
+      "budgetLimit": 600,
+      "parentId": null,
+      "createdAt": "2024-05-12T09:30:00Z"
+    },
+    {
+      "id": "8",
+      "userId": 1,
+      "name": "Lazer",
+      "type": "expense",
+      "color": "#9C27B0",
+      "icon": "sports_esports",
+      "budgetLimit": 500,
+      "parentId": null,
+      "createdAt": "2024-05-12T09:35:00Z"
+    },
+    {
+      "id": "9",
+      "userId": 1,
+      "name": "Saúde",
+      "type": "expense",
+      "color": "#4CAF50",
+      "icon": "local_hospital",
+      "budgetLimit": 400,
+      "parentId": null,
+      "createdAt": "2024-05-12T09:40:00Z"
+    },
+    {
+      "id": "10",
+      "userId": 1,
+      "name": "Salário",
+      "type": "income",
+      "color": "#2196F3",
+      "icon": "account_balance",
+      "budgetLimit": "1500",
+      "parentId": null,
+      "createdAt": "2024-05-12T09:45:00Z"
+    },
+    {
+      "id": "11",
+      "userId": 1,
+      "name": "Investimentos",
+      "type": "income",
+      "color": "#CDDC39",
+      "icon": "trending_up",
+      "budgetLimit": null,
+      "parentId": null,
+      "createdAt": "2024-05-12T09:50:00Z"
+    },
+    {
+      "id": "12",
+      "userId": 1,
+      "name": "Outros",
+      "type": "income",
+      "color": "#607D8B",
+      "icon": "category",
+      "budgetLimit": null,
+      "parentId": null,
+      "createdAt": "2024-05-12T09:55:00Z"
+    },
+    {
+      "id": "13",
+      "name": "Finanças",
+      "userId": 1,
+      "type": "expense",
+      "color": "#2bff00",
+      "budgetLimit": "120",
+      "parentId": 11,
+      "createdAt": "2025-04-02T19:05:37.656Z"
+    }
+  ],
+  "transactions": [
+    {
+      "id": "1",
+      "userId": 1,
+      "accountId": 1,
+      "categoryId": 2,
+      "amount": 1500,
+      "type": "expense",
+      "description": "Aluguel de Abril",
+      "date": "2024-05-05T00:00:00Z",
+      "status": "completed",
+      "isRecurring": true,
+      "recurringId": 1,
+      "notes": "Pagamento mensal do aluguel",
+      "attachments": [],
+      "createdAt": "2024-05-05T10:30:00Z",
+      "updatedAt": "2024-05-05T10:30:00Z"
+    },
+    {
+      "id": "2",
+      "userId": 1,
+      "accountId": 1,
+      "categoryId": 3,
+      "amount": 250.75,
+      "type": "expense",
+      "description": "Conta de Luz",
+      "date": "2024-05-10T00:00:00Z",
+      "status": "completed",
+      "isRecurring": true,
+      "recurringId": 2,
+      "notes": "Pagamento da conta de luz de Abril",
+      "attachments": [
+        "https://example.com/attachments/luz_abril.pdf"
+      ],
+      "createdAt": "2024-05-10T14:20:00Z",
+      "updatedAt": "2024-05-10T14:20:00Z"
+    },
+    {
+      "id": "3",
+      "userId": 1,
+      "accountId": 1,
+      "categoryId": 3,
+      "amount": 150.3,
+      "type": "expense",
+      "description": "Conta de Água",
+      "date": "2024-05-12T00:00:00Z",
+      "status": "completed",
+      "isRecurring": true,
+      "recurringId": 3,
+      "notes": "Pagamento da conta de água de Abril",
+      "attachments": [
+        "https://example.com/attachments/agua_abril.pdf"
+      ],
+      "createdAt": "2024-05-12T09:15:00Z",
+      "updatedAt": "2024-05-12T09:15:00Z"
+    },
+    {
+      "id": "4",
+      "userId": 1,
+      "accountId": 1,
+      "categoryId": 5,
+      "amount": 320.45,
+      "type": "expense",
+      "description": "Compras do Supermercado",
+      "date": "2024-05-15T00:00:00Z",
+      "status": "completed",
+      "isRecurring": false,
+      "recurringId": null,
+      "notes": "Compras semanais",
+      "attachments": [
+        "https://example.com/attachments/mercado_maio.jpg"
+      ],
+      "createdAt": "2024-05-15T18:45:00Z",
+      "updatedAt": "2024-05-15T18:45:00Z"
+    },
+    {
+      "id": "5",
+      "userId": 1,
+      "accountId": 1,
+      "categoryId": 6,
+      "amount": 150,
+      "type": "expense",
+      "description": "Jantar com amigos",
+      "date": "2024-05-20T00:00:00Z",
+      "status": "completed",
+      "isRecurring": false,
+      "recurringId": null,
+      "notes": "Restaurante italiano",
+      "attachments": [],
+      "createdAt": "2024-05-20T22:30:00Z",
+      "updatedAt": "2024-05-20T22:30:00Z"
+    },
+    {
+      "id": "6",
+      "userId": 1,
+      "accountId": 1,
+      "categoryId": 10,
+      "amount": 5000,
+      "type": "income",
+      "description": "Salário Maio",
+      "date": "2024-05-05T00:00:00Z",
+      "status": "completed",
+      "isRecurring": true,
+      "recurringId": 4,
+      "notes": "Salário mensal",
+      "attachments": [],
+      "createdAt": "2024-05-05T08:00:00Z",
+      "updatedAt": "2024-05-05T08:00:00Z"
+    },
+    {
+      "id": "7",
+      "userId": 1,
+      "accountId": 3,
+      "categoryId": 11,
+      "amount": 230.5,
+      "type": "income",
+      "description": "Dividendos",
+      "date": "2024-05-15T00:00:00Z",
+      "status": "completed",
+      "isRecurring": false,
+      "recurringId": null,
+      "notes": "Dividendos de ações",
+      "attachments": [],
+      "createdAt": "2024-05-15T10:15:00Z",
+      "updatedAt": "2024-05-15T10:15:00Z"
+    },
+    {
+      "id": "8",
+      "userId": 1,
+      "accountId": 1,
+      "categoryId": 7,
+      "amount": 100,
+      "type": "expense",
+      "description": "Combustível",
+      "date": "2024-05-18T00:00:00Z",
+      "status": "completed",
+      "isRecurring": false,
+      "recurringId": null,
+      "notes": "Abastecimento semanal",
+      "attachments": [],
+      "createdAt": "2024-05-18T16:20:00Z",
+      "updatedAt": "2024-05-18T16:20:00Z"
+    },
+    {
+      "id": "9",
+      "userId": 1,
+      "accountId": 1,
+      "categoryId": 9,
+      "amount": 180,
+      "type": "expense",
+      "description": "Farmácia",
+      "date": "2024-05-22T00:00:00Z",
+      "status": "completed",
+      "isRecurring": false,
+      "recurringId": null,
+      "notes": "Medicamentos e vitaminas",
+      "attachments": [
+        "https://example.com/attachments/farmacia_maio.jpg"
+      ],
+      "createdAt": "2024-05-22T11:30:00Z",
+      "updatedAt": "2024-05-22T11:30:00Z"
+    },
+    {
+      "id": "10",
+      "userId": 1,
+      "accountId": 1,
+      "categoryId": 8,
+      "amount": 120,
+      "type": "expense",
+      "description": "Cinema",
+      "date": "2024-05-25T00:00:00Z",
+      "status": "completed",
+      "isRecurring": false,
+      "recurringId": null,
+      "notes": "Filme e pipoca",
+      "attachments": [],
+      "createdAt": "2024-05-25T19:45:00Z",
+      "updatedAt": "2024-05-25T19:45:00Z"
+    }
+  ],
+  "recurringTransactions": [
+    {
+      "id": "1",
+      "userId": 1,
+      "accountId": 1,
+      "categoryId": 2,
+      "amount": 1500,
+      "type": "expense",
+      "description": "Aluguel",
+      "frequency": "monthly",
+      "startDate": "2024-01-05T00:00:00Z",
+      "endDate": null,
+      "dayOfMonth": 5,
+      "isActive": true,
+      "lastProcessed": "2024-05-05T00:00:00Z",
+      "createdAt": "2024-01-05T10:30:00Z",
+      "updatedAt": "2024-05-05T10:30:00Z"
+    },
+    {
+      "id": "2",
+      "userId": 1,
+      "accountId": 1,
+      "categoryId": 3,
+      "amount": 250.75,
+      "type": "expense",
+      "description": "Conta de Luz",
+      "frequency": "monthly",
+      "startDate": "2024-01-10T00:00:00Z",
+      "endDate": null,
+      "dayOfMonth": 10,
+      "isActive": true,
+      "lastProcessed": "2024-05-10T00:00:00Z",
+      "createdAt": "2024-01-10T14:20:00Z",
+      "updatedAt": "2024-05-10T14:20:00Z"
+    },
+    {
+      "id": "3",
+      "userId": 1,
+      "accountId": 1,
+      "categoryId": 3,
+      "amount": 150.3,
+      "type": "expense",
+      "description": "Conta de Água",
+      "frequency": "monthly",
+      "startDate": "2024-01-12T00:00:00Z",
+      "endDate": null,
+      "dayOfMonth": 12,
+      "isActive": true,
+      "lastProcessed": "2024-05-12T00:00:00Z",
+      "createdAt": "2024-01-12T09:15:00Z",
+      "updatedAt": "2024-05-12T09:15:00Z"
+    },
+    {
+      "id": "4",
+      "userId": 1,
+      "accountId": 1,
+      "categoryId": 10,
+      "amount": 5000,
+      "type": "income",
+      "description": "Salário",
+      "frequency": "monthly",
+      "startDate": "2024-01-05T00:00:00Z",
+      "endDate": null,
+      "dayOfMonth": 5,
+      "isActive": true,
+      "lastProcessed": "2024-05-05T00:00:00Z",
+      "createdAt": "2024-01-05T08:00:00Z",
+      "updatedAt": "2024-05-05T08:00:00Z"
+    }
+  ],
+  "budgets": [
+    {
+      "id": "1",
+      "userId": 1,
+      "name": "Maio 2024",
+      "startDate": "2024-05-01T00:00:00Z",
+      "endDate": "2024-05-31T23:59:59Z",
+      "createdAt": "2024-04-28T15:00:00Z",
+      "updatedAt": "2024-04-28T15:00:00Z",
+      "items": [
+        {
+          "categoryId": 1,
+          "plannedAmount": 2000,
+          "currentAmount": 1900.05
+        },
+        {
+          "categoryId": 4,
+          "plannedAmount": 1200,
+          "currentAmount": 470.45
+        },
+        {
+          "categoryId": 7,
+          "plannedAmount": 600,
+          "currentAmount": 100
+        },
+        {
+          "categoryId": 8,
+          "plannedAmount": 500,
+          "currentAmount": 120
+        },
+        {
+          "categoryId": 9,
+          "plannedAmount": 400,
+          "currentAmount": 180
+        }
+      ]
+    }
+  ],
+  "goals": [
+    {
+      "id": "1",
+      "userId": 1,
+      "name": "Fundo de emergência",
+      "targetAmount": 20000,
+      "currentAmount": 12500.35,
+      "accountId": 2,
+      "startDate": "2024-01-01T00:00:00Z",
+      "targetDate": "2024-12-31T23:59:59Z",
+      "color": "#4CAF50",
+      "icon": "savings",
+      "notes": "Guardar 6 meses de despesas",
+      "isCompleted": false,
+      "createdAt": "2024-01-01T10:00:00Z",
+      "updatedAt": "2024-05-15T08:30:00Z"
+    },
+    {
+      "id": "2",
+      "userId": 1,
+      "name": "Férias Europa",
+      "targetAmount": 15000,
+      "currentAmount": 5200,
+      "accountId": 2,
+      "startDate": "2024-02-01T00:00:00Z",
+      "targetDate": "2025-01-01T23:59:59Z",
+      "color": "#FF9800",
+      "icon": "flight",
+      "notes": "Viagem para Paris e Roma",
+      "isCompleted": false,
+      "createdAt": "2024-02-01T12:15:00Z",
+      "updatedAt": "2024-05-20T09:45:00Z"
+    }
+  ],
+  "reports": [
+    {
+      "id": "1",
+      "userId": 1,
+      "name": "Relatório Mensal - Maio 2024",
+      "type": "monthly",
+      "startDate": "2024-05-01T00:00:00Z",
+      "endDate": "2024-05-31T23:59:59Z",
+      "createdAt": "2024-06-01T08:00:00Z",
+      "summary": {
+        "totalIncome": 5230.5,
+        "totalExpense": 2770.5,
+        "netCashflow": 2460,
+        "savingsRate": 47.03,
+        "topExpenseCategories": [
+          {
+            "categoryId": 1,
+            "name": "Moradia",
+            "amount": 1900.05,
+            "percentage": 68.58
+          },
+          {
+            "categoryId": 4,
+            "name": "Alimentação",
+            "amount": 470.45,
+            "percentage": 16.98
+          },
+          {
+            "categoryId": 9,
+            "name": "Saúde",
+            "amount": 180,
+            "percentage": 6.5
+          }
+        ],
+        "budgetPerformance": {
+          "onTarget": 3,
+          "overBudget": 0,
+          "underBudget": 2
+        }
+      }
+    }
+  ],
+  "notifications": [
+    {
+      "id": "1",
+      "userId": 1,
+      "type": "transaction",
+      "title": "Nova Transação",
+      "message": "Transação de R$ 150,00 em Jantar com amigos registrada.",
+      "isRead": true,
+      "relatedId": 5,
+      "createdAt": "2024-05-20T22:30:00Z"
+    },
+    {
+      "id": "2",
+      "userId": 1,
+      "type": "budget",
+      "title": "Alerta de Orçamento",
+      "message": "Você atingiu 80% do orçamento para Alimentação este mês.",
+      "isRead": false,
+      "relatedId": 1,
+      "createdAt": "2024-05-25T08:00:00Z"
+    },
+    {
+      "id": "3",
+      "userId": 1,
+      "type": "recurring",
+      "title": "Transação Recorrente",
+      "message": "Lembrete: Aluguel de R$ 1500,00 será debitado em 2 dias.",
+      "isRead": false,
+      "relatedId": 1,
+      "createdAt": "2024-06-03T08:00:00Z"
+    },
+    {
+      "id": "4",
+      "userId": 1,
+      "type": "goal",
+      "title": "Meta Próxima",
+      "message": "Você está a 10% de atingir sua meta de Fundo de emergência!",
+      "isRead": false,
+      "relatedId": 1,
+      "createdAt": "2024-05-26T12:00:00Z"
+    }
+  ],
+  "tags": [
+    {
+      "id": "1",
+      "userId": 1,
+      "name": "Essencial",
+      "color": "#F44336",
+      "createdAt": "2024-05-12T10:00:00Z"
+    },
+    {
+      "id": "2",
+      "userId": 1,
+      "name": "Opcional",
+      "color": "#9C27B0",
+      "createdAt": "2024-05-12T10:05:00Z"
+    },
+    {
+      "id": "3",
+      "userId": 1,
+      "name": "Reembolsável",
+      "color": "#4CAF50",
+      "createdAt": "2024-05-12T10:10:00Z"
+    },
+    {
+      "id": "4",
+      "userId": 1,
+      "name": "Trabalho",
+      "color": "#2196F3",
+      "createdAt": "2024-05-12T10:15:00Z"
+    },
+    {
+      "id": "5",
+      "userId": 1,
+      "name": "Férias",
+      "color": "#FF9800",
+      "createdAt": "2024-05-12T10:20:00Z"
+    }
+  ],
+  "transactionTags": [
+    {
+      "id": "1",
+      "transactionId": 1,
+      "tagId": 1,
+      "createdAt": "2024-05-05T10:30:00Z"
+    },
+    {
+      "id": "2",
+      "transactionId": 2,
+      "tagId": 1,
+      "createdAt": "2024-05-10T14:20:00Z"
+    },
+    {
+      "id": "3",
+      "transactionId": 3,
+      "tagId": 1,
+      "createdAt": "2024-05-12T09:15:00Z"
+    },
+    {
+      "id": "4",
+      "transactionId": 4,
+      "tagId": 1,
+      "createdAt": "2024-05-15T18:45:00Z"
+    },
+    {
+      "id": "5",
+      "transactionId": 5,
+      "tagId": 2,
+      "createdAt": "2024-05-20T22:30:00Z"
+    },
+    {
+      "id": "6",
+      "transactionId": 8,
+      "tagId": 4,
+      "createdAt": "2024-05-18T16:20:00Z"
+    },
+    {
+      "id": "7",
+      "transactionId": 10,
+      "tagId": 5,
+      "createdAt": "2024-05-25T19:45:00Z"
+    }
+  ]
+}
