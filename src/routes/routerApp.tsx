@@ -1,6 +1,7 @@
 import Categories from "@/app/pages/categories";
 import Dashboard from "@/app/pages/dashboard";
 import Login from "@/app/pages/login";
+import Reports from "@/app/pages/reports";
 import Transactions from "@/app/pages/transactions";
 import { Route, Routes } from "react-router";
 
@@ -11,6 +12,7 @@ export default function RoutesApp() {
       <Route path="/dashboard" element={<Dashboard />} />
       <Route path="/transactions" element={<Transactions />} />
       <Route path="/categories" element={<Categories />} />
+      <Route path="/reports" element={<Reports />} />
     </Routes>
   );
 }

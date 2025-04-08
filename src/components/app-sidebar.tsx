@@ -42,7 +42,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
     },
     {
       title: "Relatórios",
-      url: "#",
+      url: "reports",
       icon: IconFolder,
     },
     {
