@@ -41,9 +41,9 @@ Desenvolver uma aplicação web para gestão financeira pessoal ou empresarial u
 - Limites de orçamento por categoria ✅
 
 ### 4. Relatórios
-- Extrato de transações com filtros
-- Análise comparativa por períodos
-- Projeções financeiras baseadas em dados históricos
+- Extrato de transações com filtros ✅
+- Análise comparativa por períodos ✅
+- Projeções financeiras baseadas em dados históricos 
 
 ### 5. Configurações de Usuário
 - Preferências de visualização

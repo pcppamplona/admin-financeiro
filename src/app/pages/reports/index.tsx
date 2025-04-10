@@ -2,7 +2,7 @@ import { AppSidebar } from "@/components/app-sidebar";
 // import MultiStepForm from "@/components/multi-step";
 import { SiteHeader } from "@/components/site-header";
 import { SidebarInset, SidebarProvider } from "@/components/ui/sidebar";
-import ReportsTransactions from "./reports-transactions";
+import ReportsTransactions from "./reportsTransactions";
 
 export default function Reports() {
   return (

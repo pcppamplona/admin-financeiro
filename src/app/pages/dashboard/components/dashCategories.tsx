@@ -64,8 +64,9 @@ export function DashCategories() {
   };
 
   return (
-    <div className="grid grid-cols-1 gap-4 px-4 lg:px-6 @xl/main:grid-cols-2 @5xl/main:grid-cols-4">
-      <Card className="@container/card">
+    // <div className="grid grid-cols-1 gap-4 px-4 lg:px-6 @xl/main:grid-cols-2 @5xl/main:grid-cols-4">
+    <div>
+      <Card className="@container/card h-full flex flex-col">
         <CardHeader>
           <CardDescription>
             Categorias do <span className="font-semibold">{user?.name}</span>
@@ -81,13 +82,13 @@ export function DashCategories() {
               categories.map((category: Category) => (
                 <li
                   key={category.id}
-                  className="p-2 border-l-[8px] bg-gray-50 rounded-lg hover:shadow-lg transition-shadow"
+                  className="p-2 border-l-[6px] border-[0.5px] bg-gray-50 rounded-lg hover:shadow-lg transition-shadow"
                   style={{ borderColor: category.color }}
                   onClick={() => handleCardClick(category.id)}
                 >
                   <div className="flex items-center space-x-4">
                     <div
-                      className="w-7 h-7 rounded-full flex items-center justify-center p-1.5"
+                      className="w-7 h-7 rounded-full flex items-center justify-center p-1.5 text-white"
                       style={{
                         backgroundColor: category.color,
                       }}
@@ -95,7 +96,7 @@ export function DashCategories() {
                       {iconMap[String(category.icon)] || <IconTrendingUp />}{" "}
                     </div>
                     <div>
-                      <h3 className="text-lg font-medium">{category.name}</h3>
+                      <h3 className="text-sm font-medium">{category.name}</h3>
                     </div>
                   </div>
 

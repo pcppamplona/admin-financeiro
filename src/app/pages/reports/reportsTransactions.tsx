@@ -70,6 +70,10 @@ export default function ReportsTransactions() {
 
   useEffect(() => {
     async function fetchTransactions() {
+      if (!user) {
+        throw new Error("Usuário não autenticado.");
+      }
+
       try {
         const transactionsData = await useByUserTransactionsData(user.id);
         setTransactions(transactionsData);
